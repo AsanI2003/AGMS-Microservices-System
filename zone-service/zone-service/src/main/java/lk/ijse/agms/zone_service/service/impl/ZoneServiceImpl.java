@@ -53,7 +53,7 @@ public class ZoneServiceImpl implements ZoneService {
     @Override
     public ZoneDTO getZone(String id) {
         Zone zone = zoneRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Zone not found for deletion: " + id));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Zone not found: " + id));
         return modelMapper.map(zone, ZoneDTO.class);
     }
 
