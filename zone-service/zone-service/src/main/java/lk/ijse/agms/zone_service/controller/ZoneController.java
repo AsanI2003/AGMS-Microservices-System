@@ -16,8 +16,11 @@ public class ZoneController {
     private ZoneService zoneService;
 
     @PostMapping
-    public String saveZone(@RequestBody ZoneDTO zoneDTO) {
-        return zoneService.saveZone(zoneDTO);
+    public String saveZone(
+            @RequestHeader("Authorization") String token,
+            @RequestBody ZoneDTO zoneDTO
+    ) {
+        return zoneService.saveZone(zoneDTO, token);
     }
 
     @GetMapping("/{id}")
