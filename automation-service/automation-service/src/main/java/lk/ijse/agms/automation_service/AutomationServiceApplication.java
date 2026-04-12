@@ -1,4 +1,4 @@
-package lk.ijse.agms.zone_service;
+package lk.ijse.agms.automation_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class ZoneServiceApplication {
+public class AutomationServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZoneServiceApplication.class, args);
+		SpringApplication.run(AutomationServiceApplication.class, args);
 	}
 
 }

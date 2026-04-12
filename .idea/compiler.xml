@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sensor-service" />
         <module name="config-server" />
+        <module name="automation-service" />
         <module name="descovery-service" />
+        <module name="sensor-service" />
       </profile>
       <profile name="Annotation profile for zone-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -17,18 +18,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="zone-service" />
-      </profile>
-      <profile name="Annotation profile for crop_service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="crop_service" />
+        <module name="zone-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +29,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="automation-service" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="crop_service" options="-parameters" />
       <module name="descovery-service" options="-parameters" />
