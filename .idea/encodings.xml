@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/api-gateway/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/automation-service/automation-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crop_service/crop_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/descovery-service/descovery-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-service/discovery-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sensor-service/sensor-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zone-service/zone-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>
